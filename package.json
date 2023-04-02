@@ -1,0 +1,59 @@
+{
+    "name": "@axelrindle/vite-plugin-favicon",
+    "version": "0.1.0",
+    "description": "Vite plugin for dynamic favicon generation.",
+    "private": false,
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "main": "dist/index.cjs",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "*.d.ts"
+    ],
+    "scripts": {
+        "test": "vitest --run",
+        "build": "unbuild",
+        "prepack": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/axelrindle/vite-plugin-favicon.git"
+    },
+    "keywords": [
+        "vite",
+        "vite-plugin",
+        "favicon",
+        "favicon-generator"
+    ],
+    "author": "Axel Rindle <mail@axelrindle.de>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/axelrindle/vite-plugin-favicon/issues"
+    },
+    "homepage": "https://github.com/axelrindle/vite-plugin-favicon#readme",
+    "devDependencies": {
+        "@commitlint/cli": "^17.5.1",
+        "@commitlint/config-conventional": "^17.4.4",
+        "@types/node": "^18.15.11",
+        "husky": "^8.0.3",
+        "sharp": "^0.32.0",
+        "unbuild": "^1.2.0",
+        "vite": "^4.0.0",
+        "vitest": "^0.29.8"
+    },
+    "dependencies": {
+        "chalk": "^5.2.0",
+        "favicons": "^7.1.1",
+        "mkdirp": "^2.1.6"
+    },
+    "engines": {
+        "node": ">=16"
+    }
+}
