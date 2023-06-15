@@ -1,6 +1,6 @@
 {
     "name": "@axelrindle/vite-plugin-favicon",
-    "version": "0.2.0-2",
+    "version": "0.2.0",
     "description": "Vite plugin for dynamic favicon generation.",
     "private": false,
     "exports": {
