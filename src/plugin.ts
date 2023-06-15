@@ -15,7 +15,6 @@ export default function favicon(options: PluginOptions): Plugin {
 
     return {
         name: 'favicon',
-        apply: 'build',
         configResolved(config: ResolvedConfig) {
             viteOptions = config
         },
