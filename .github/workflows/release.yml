@@ -8,6 +8,9 @@ on:
 env:
   NODE_VERSION: 18.x
 
+permissions:
+  contents: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -39,6 +42,7 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
+          prerelease: contains(github.ref_name, '-')
           body: |
             ## Changelog
             ${{ steps.extract-changelog.outputs.markdown }}
