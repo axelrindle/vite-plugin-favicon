@@ -1,7 +1,7 @@
 import { Plugin, ResolvedConfig } from 'vite'
 import { PluginOptions } from './types'
 import { favicons } from 'favicons'
-import mkdirp from 'mkdirp'
+import { mkdirp } from 'mkdirp'
 import { join, resolve } from 'path'
 import { writeFile } from 'fs/promises'
 import chalk from 'chalk'
