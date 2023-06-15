@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Changed
+
+- Will run for `vite build` as well as `vite` (serve)
+
+## Security
+
+- Fixed [a vulnerability with Vite](https://github.com/vitejs/vite/security/advisories/GHSA-353f-5xf4-qw67)
+
 ## [0.1.0] - 2023-04-02
 
 Initial release 🎉
